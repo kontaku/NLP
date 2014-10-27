@@ -14,7 +14,7 @@ def arg2(L):
 		return n
 	else:
 		print 'this text has %d lines.'\
-			'please try again.' %(L)
+			'please try again.' %(L.encode('utf8'))
 		n=arg2(L)
 		return n
 
@@ -29,6 +29,6 @@ if __name__=='__main__':
 		if L-N>i:
 			continue
 		else:
-			print txt_list[i],
+			print txt_list[i].encode('utf8'),
 	f1.close()
 	

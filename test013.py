@@ -1,12 +1,11 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
-import sys
+import sys,re
 
 if __name__=='__main__':
 	for line in sys.stdin.readlines():
 		line = line.strip().decode('utf8')
-		if line.find('RT @') !=-1:
-			retweet=line.split('RT @')[0]
-			print retweet
-			
+		comment = re.compile(': ([\S]{1,})RT @').findall(line)
+		if len(comment) !=0:
+			print comment[0].encode('utf8')

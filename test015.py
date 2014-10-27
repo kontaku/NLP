@@ -7,7 +7,7 @@ def replacehref(usr):
 	user=usr.strip('@')
 	HTML='<a href = "https://twitter.com/#!/%s">%s</a>' \
 	% (user,usr)
-	return HTML
+	return HTML.encode('utf8')
 
 if __name__== '__main__':
 	for line in sys.stdin.readlines():

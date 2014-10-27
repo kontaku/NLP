@@ -10,7 +10,7 @@ if __name__== '__main__':
 		ken = re.compile(ur'[一-龠]{2,3}[都|道|府|県]').findall(line)
 		si = re.compile(ur'([一-龠]{2,3}[都|道|府|県])(.{1,}[市|町|村])').findall(line)
 		if len(ken)!=0 and len(yubin)!=0 and len(si)!=0:
-			print '%s\t%s\t%s'%(yubin[0],ken[0],si[0][1])
+			print '%s\t%s\t%s'%(yubin[0].encode('utf8'),ken[0].encode('utf8'),si[0][1].encode('utf8'))
 			
 			
 	

@@ -11,7 +11,7 @@ def human_name(line,keisyou):
 				% (kanji,hiragana,katakana,keisyou)). \
 				findall(line)	
 	if len(human_name)!=0 and len(human_name[0][0]) >=3 and len(human_name[0][0])<=5:
-		return human_name[0][0]+human_name[0][1]
+		return human_name[0][0].encode('utf8')+human_name[0][1].encode('utf8')
 	
 
 if __name__== '__main__':

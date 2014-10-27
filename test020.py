@@ -12,6 +12,6 @@ if __name__== '__main__':
 			if len(kao_attr) !=0:
 				kao=paren[0][0]+paren[0][1]+paren[0][2] 
 				if kao.find('http')==-1:
-					print kao
+					print kao.encode('utf8')
 				
 			

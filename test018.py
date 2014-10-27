@@ -8,6 +8,6 @@ if __name__== '__main__':
 		line = line.strip().decode('utf8')
 		ku = re.compile(ur'(仙台市)(.{1,3}区)').findall(line)
 		if len(ku)!=0:
-			print line
+			print line.encode(utf8)
 		
 	
