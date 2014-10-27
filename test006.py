@@ -1,27 +1,34 @@
 #!/usr/bin/python
 #-*-coding:utf-8-*-
 
+#$ python test006.py
 import sys
 
-def arg():
+def arg2(L):
 	try:
-		n=raw_input('please input row number:')
+		n=raw_input('please input the number of lines:')
 		int(n)
 	except:
-		n=arg()
-	return n 
+		n=arg2(L)
+	if int(n)<L:
+		return n
+	else:
+		print 'this text has %d lines.'\
+			'please try again.' %(L)
+		n=arg2(L)
+		return n
 
 
 if __name__=='__main__':
-	N=int(arg())
-	f1 = open('address.txt','r')
-	L=f1.readlines()
-	i=0
-	for line in L:
-		if len(L)-N>i:
-			i+=1
+	txt=raw_input('please input text:')
+	f1 = open(txt,'r')
+	txt_list=f1.readlines()
+	L=len(txt_list)
+	N=int(arg2(L))
+	for i in xrange(L):
+		if L-N>i:
 			continue
 		else:
-			print line
+			print txt_list[i],
 	f1.close()
 	

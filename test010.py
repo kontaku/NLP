@@ -9,5 +9,5 @@ if __name__=='__main__':
 	counter = Counter(f1.readlines())
 	list = sorted(counter.most_common(),key=lambda x:x[1],reverse = True)
 	for L in list:
-		print L[0].strip('\n')+'\t'+str(L[1])
+		print '%s\t%s'%(L[0].strip('\n'),str(L[1]))
 	f1.close()

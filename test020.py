@@ -3,7 +3,7 @@
 
 import sys,re
 
-if __name__=='__main__':
+if __name__== '__main__':
 	for line in sys.stdin.readlines():
 		line = line.strip().decode('utf8')
 		paren = re.compile(ur'([\(|（])(.+?)([\)|）])').findall(line)

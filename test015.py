@@ -9,7 +9,7 @@ def replacehref(usr):
 	% (user,usr)
 	return HTML
 
-if __name__=='__main__':
+if __name__== '__main__':
 	for line in sys.stdin.readlines():
 		line = line.strip().decode('utf8')
 		u_name = re.compile('@\w*\s').findall(line)
