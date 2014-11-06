@@ -15,7 +15,7 @@ def human_name(line,keisyou):
 	
 
 if __name__== '__main__':
-	for line in sys.stdin.readlines():
+	for line in sys.stdin.xreadlines():
 		line = line.strip().decode('utf8')
 		keisyou = re.compile(ur'(さん|氏|ちゃん|くん|君|先生|様|殿|たん|きゅん|嬢)').findall(line)
 		if len(keisyou)!=0 and human_name(line,keisyou[0]) != None:

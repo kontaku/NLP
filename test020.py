@@ -4,7 +4,7 @@
 import sys,re
 
 if __name__== '__main__':
-	for line in sys.stdin.readlines():
+	for line in sys.stdin.xreadlines():
 		line = line.strip().decode('utf8')
 		paren = re.compile(ur'([\(|（])(.+?)([\)|）])').findall(line)
 		if len(paren)!=0:		
