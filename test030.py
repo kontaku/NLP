@@ -9,5 +9,5 @@ if __name__== '__main__':
 	for line in sys.stdin.xreadlines():
 		col3 = line.strip().split()
 		print '%s\t%s'%(line.strip(),stem(col3[1]))
-		f1.write('%s\t%s'%(line.strip(),stem(col3[1])))
+		f1.write('%s\t%s\n'%(line.strip(),stem(col3[1])))
 	f1.close()
