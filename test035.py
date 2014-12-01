@@ -24,7 +24,7 @@ if __name__ == '__main__':
 		word = wordset[1]
 		try:
 			attr = wordsDict[word]
-			attr = str2dict(attr)
+			#attr = str2dict(attr)
 			L = len(attr)
 			if L < 3:
 				continue

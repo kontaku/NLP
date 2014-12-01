@@ -4,6 +4,10 @@
 import sys
 from test037 import freq_bigram
 
+"""
+python test038.py
+"""
+
 def cnt_1st_terms(listA):
 	dictA = {}
 	for line in listA:
@@ -21,4 +25,4 @@ if __name__ == '__main__':
 	dictA = cnt_1st_terms(lines)
 	for line in lines:
 		first_term = line[0].strip().split('\t')[0]
-		print str(float(line[1])/dictA[first_term]),line[0]
+		print '%f\t%s'%(float(line[1])/dictA[first_term],line[0])

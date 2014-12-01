@@ -24,7 +24,7 @@ if __name__ == '__main__':
 		word = wordset[1]
 		try:
 			attr = wordsDict[word]
-			attr = str2dict(attr)
+			#attr = str2dict(attr)
 			L = len(attr)
 			for i in xrange(L):
 				print '%s\t%s\t%s\t%s' %(line.strip(),attr[i][0],attr[i][1],attr[i][2])
