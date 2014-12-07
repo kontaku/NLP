@@ -48,7 +48,7 @@ if __name__ == '__main__':
 		print key
 		print dicA[key]
 		print dicB[key]
-		plt.plot(dicA[key],dicB[key],'o')
+		plt.bar(dicA[key],dicB[key])
 	plt.title('title')
 	plt.ylabel('kotonari')
 	plt.xlabel('hindo')

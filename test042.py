@@ -20,7 +20,7 @@ if __name__ == '__main__':
 	f1 = open('japanese.txt','r')
 	map_lists = []
 	for line in f1.readlines():
-		map_lists.append(Mor_Ana(line.strip())) 		
+		map_lists.append(Mor_Ana(line)) 		
 	d = verb_list(map_lists)
 	for verb in d['verb']:
 		print verb

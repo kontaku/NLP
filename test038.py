@@ -1,12 +1,11 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
-
-import sys
-from test037 import freq_bigram
-
 """
 python test038.py
 """
+import sys
+from test037 import freq_bigram
+
 
 def cnt_1st_terms(listA):
 	dictA = {}

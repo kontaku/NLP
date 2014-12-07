@@ -1,6 +1,9 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
+"""
+python test036.py
+"""
 import sys
 
 def sep_col(line):

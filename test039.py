@@ -1,13 +1,13 @@
 #!/usr/bin/python
 #-*- coding: utf-8 -*-
 
+"""
+python test039.py
+"""
 import kyotocabinet as kc
 from test037 import freq_bigram
 from test038 import cnt_1st_terms
 
-"""
-python test039.py
-"""
 
 class KyotoCabinet(kc.DB):
 		def __del__(self):
