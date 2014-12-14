@@ -18,12 +18,13 @@ class Chunk:
 		self.morphs = morphs
 		self.dst = dst
 		self.srcs = srcs
-	
+
 	def showinfo(self):
-		print  '[dst, srcs] = [%s, %s]' %( self.dst, self.srcs)
+		print  '[dst, srcs] = [%s, %s]' %(self.dst, self.srcs)
 	
 	def show_phr(self):
-		print '[id, chunk] = [%d, %s]' %(self.id,self.morphs,)
+		print '[id, chunk] = [%d, %s]' %(self.id, self.morphs)
+
 
 def sep_phr(lattice):
 	phrs = lattice.split('* ')
